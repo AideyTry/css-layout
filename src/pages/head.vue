@@ -51,18 +51,18 @@ export default {
       return this.$route.name
     }
   },
-  methods: {
-    changeHighlighted (item, index) {
-      this.activeIndex = index
-      this.$router.push({ name: item.name })
-    }
-  },
   mounted () {
     this.navList.forEach((item, index) => {
       if (this.activeRoute === item.name) {
         this.activeIndex = index
       }
     })
+  },
+  methods: {
+    changeHighlighted (item, index) {
+      this.activeIndex = index
+      this.$router.push({ name: item.name })
+    }
   }
 }
 </script>
