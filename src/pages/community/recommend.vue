@@ -191,7 +191,9 @@ export default {
     }
   },
   mounted () {
-    this.waterFall()
+    setTimeout(() => {
+      this.waterFall()
+    }, 500)
   },
   methods: {
     getClient () {
