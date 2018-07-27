@@ -24,8 +24,9 @@
   .note-box{
     width:1120px;
     margin:0 auto;
-    overflow-x:auto;
+    // overflow-x:auto;
     padding-top:5px;
+    position:relative;
     .note-view{
       width:250px;
       margin: 0 15px;

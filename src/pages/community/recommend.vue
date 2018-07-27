@@ -268,7 +268,7 @@ export default {
             margin:13px 15px 11px 15px;
             line-height:23px;
             overflow:hidden;
-            text-overflow:ellipsis;">{{${vm.noteList[i].explain}}}</h3></div><div style="padding:0 15px 10px 15px;
+            text-overflow:ellipsis;">${vm.noteList[i].explain}</h3></div><div style="padding:0 15px 10px 15px;
           overflow:hidden;
           display:flex;"><div style="flex:1;"><img style="display:block;
               float:left;

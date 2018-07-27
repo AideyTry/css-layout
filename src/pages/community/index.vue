@@ -4,14 +4,17 @@
       <a href="javascript:;" :class="{'tab-active':activeIndex===index}" class="tab-item" v-for="(item, index) in tabItems" :key="index" @click="changeTab(item, index)">{{item.title}}</a>
     </div>
     <recommend v-if="activeTab==='recommend' || !activeTab"></recommend>
+    <fasion v-if="activeTab==='fasion'"></fasion>
   </div>
 </template>
 
 <script>
 import Recommend from './recommend'
+import Fasion from './fasion'
 export default {
   components: {
-    Recommend
+    Recommend,
+    Fasion
   },
   data () {
     return {
