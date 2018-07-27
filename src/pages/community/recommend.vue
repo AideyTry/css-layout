@@ -290,7 +290,6 @@ export default {
               -o-text-overflow: ellipsis;
               text-overflow: ellipsis;">${vm.noteList[i].name}</span></div><div style="margin:3px 0 0 0;"><i></i><span style="vertical-align: middle;
             color: #555;">${vm.noteList[i].like}</span></div></div></div>`
-            console.log('div=', div)
             vm.$refs.noteBox.appendChild(div)
             assign(div)
           }
